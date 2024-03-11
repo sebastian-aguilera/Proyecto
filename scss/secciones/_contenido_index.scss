@@ -1,0 +1,59 @@
+// -----Main----- 
+main {
+    padding: 50px;
+    background-color: #ece9e9;
+    background-image: linear-gradient(#c6d634dc, orange);
+}
+
+// --Grilla--
+.main_titulogrilla {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cancun cancun disney disney"
+        "cancun cancun disney disney"
+        "roma roma africa africa"
+        "roma roma africa africa";
+    justify-content: center;
+}
+
+.cancun {
+    text-align: center;
+    grid-area: cancun;
+    background-image: url('../resources/cancunsi.webp');
+    color: white;
+    background-size: cover;
+}
+
+
+.disney {
+    text-align: center;
+    grid-area: disney;
+    background-image: url('../resources/disney1.jpg');
+    color: white;
+    background-size: cover;
+}
+
+.roma {
+    text-align: center;
+    grid-area: roma;
+    background-image: url('../resources/romasi.jpg');
+    color: white;
+    background-size: cover;
+
+}
+
+.africa {
+    text-align: center;
+    grid-area: africa;
+    background-image: url('../resources/africa1.jpg');
+    color: white;
+    background-size: cover;
+}

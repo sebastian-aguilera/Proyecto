@@ -1,14 +1,14 @@
-* {
+ /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
+}  */
 
 
 
 /* -----Header-----*/
-header {
+/* header {
     background: #000000;
 }
 
@@ -53,14 +53,14 @@ nav ul li a {
     margin-right: 100px;
     cursor: pointer;
     display: none;
-}
+} */
 
-#check {
+/* #check {
     display: none;
 }
 
 /* Le dá un zoom al logo */
-.imagen-logo {
+/* .imagen-logo {
     cursor: pointer;
     transition: 2s;
 }
@@ -71,28 +71,28 @@ nav ul li a {
 }
 
 /*Botones neon*/
-.btn-neon {
+/* .btn-neon {
     position: relative;
     padding: 15px 30px;
     color: rgb(225, 255, 0);
     /* letter-spacing: 1px; */
-    font-size: 25px;
+    /* font-size: 25px;
     text-decoration: none;
     transition: 2s;
-}
-
+} */
+/* 
 .btn-neon:hover {
     background-color: #ffa500;
     box-shadow: 0 0 10px #ffa500, 0 0 200px #ffa500, 0 0 80px #ffa500;
 }
 
 /* Banner */
-#slider {
+/* #slider {
     width: 100%;
-    /* background-color: #00b51b; */
-    overflow: hidden;
+    /* background-color: #00b51b; 
+    overflow: hidden; */ 
 
-
+/* 
     #contenedor {
         display: grid;
         grid-template-columns: 100% 100% 100%;
@@ -173,19 +173,19 @@ nav ul li a {
         margin-left: 0%;
     }
 
-}
+}  */
 
 
 
 
 /* -----Main----- */
-main {
+/* main {
     padding: 50px;
     background-color: #ece9e9;
     background-image: linear-gradient(#c6d634dc, orange);
-}
+} */
 
-/* --Grilla--*/
+/* --Grilla--
 .main_titulogrilla {
     text-align: center;
 }
@@ -195,7 +195,7 @@ main {
     grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(4, 150px);
     /* grid-auto-rows: 1fr; */
-    gap: 5px 5px;
+    /* gap: 5px 5px;
 
     grid-auto-flow: row;
     grid-template-areas:
@@ -205,25 +205,25 @@ main {
         "roma roma africa africa";
     justify-content: center;
 
-}
+} */
 
-.cancun {
+/* .cancun {
     text-align: center;
     grid-area: cancun;
     background-image: url('../resources/cancunsi.webp');
     color: white;
     background-size: cover;
-}
+} */
 
-
+/* 
 .disney {
     text-align: center;
     grid-area: disney;
     background-image: url('../resources/disney1.jpg');
     color: white;
     background-size: cover;
-}
-
+} */
+/* 
 .roma {
     text-align: center;
     grid-area: roma;
@@ -231,60 +231,60 @@ main {
     color: white;
     background-size: cover;
 
-}
+} */
 
-.africa {
+/* .africa {
     text-align: center;
     grid-area: africa;
     background-image: url('../resources/africa1.jpg');
     color: white;
     background-size: cover;
-}
+}  */
 
 
 /* --Page alojamientos - Carousel de imágenes de --*/
-.boots-modif-ancho {
+/* .boots-modif-ancho {
     width: 50%;
     margin: auto;
     padding-bottom: 10px;
 
-}
+} */
 
-.alojamientos__titulos {
+/* .alojamientos__titulos {
     text-align: center;
-}
+} */
 
-.alojamientos__titulos__p {
+/* .alojamientos__titulos__p {
     text-align: center;
     font-size: 25px;
-}
+} */
 
 /* --Page destinos - tamaño de video(iframe)--*/
-.section_video_contenedor {
+/* .section_video_contenedor {
     display: flex;
     text-align: center;
     justify-content: center;
     justify-content: space-between;
 
-}
+} */
 
-.contacto_estilo_parrafo {
-    text-align: center;
-}
 
-.section_video_contenedor iframe {
+
+/* .section_video_contenedor iframe {
     width: 300px;
     height: 400px;
 
-}
-
+} */
+/* .contacto_estilo_parrafo {
+    text-align: center;
+} */
 /* --Page contacto - tamaño de mapa(iframe)-*/
-.map_iframe {
+/* .map_iframe {
     display: flex;
     justify-content: center;
-}
+} */
 
-/* Modifica estilos del boostrap cards */
+/* Modifica estilos del boostrap cards
 .imagenes_cards img {
     width: 550px;
     height: 350px;
@@ -293,28 +293,28 @@ main {
 .card {
     align-items: center;
     justify-content: center;
-}
+} */
 
-/* Footer */
+/* Footer
 /* Iconos del footer */
-.footer {
+/* .footer {
     background-color: #000000;
     color: orange;
     height: 100px;
     padding-top: 1px;
     text-align: center;
-}
+} */
 
-.footer ul {
+/* .footer ul {
     position: relative;
     display: flex;
     transform-style: preserve-3d;
     flex-direction: row-reverse;
     margin: 20px;
     justify-content: center;
-}
+} */
 
-.footer ul li {
+/* .footer ul li {
     position: relative;
     list-style: none;
     width: 40px;
@@ -323,9 +323,9 @@ main {
     transition: 0.1s;
 
 
-}
+} */
 
-.footer ul li::before {
+/* .footer ul li::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -335,9 +335,9 @@ main {
     background: #2a2a2a;
     transform-origin: top;
     transform: skew(-41deg);
-}
+} */
 
-.footer ul li::after {
+/* .footer ul li::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -346,10 +346,10 @@ main {
     background: #2a2a2a;
     transform-origin: right;
     transform: skewY(-49deg);
-}
+} */
 
 
-.footer ul li span {
+/* .footer ul li span {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -360,9 +360,9 @@ main {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.5em;
     transition: 0.5s;
-}
+} */
 
-.footer ul li:hover span {
+/* .footer ul li:hover span {
     z-index: 1000;
     box-shadow: -1px 1px 1px rgba(255, 255, 255, 0.05);
     color: #fff;
@@ -372,9 +372,9 @@ main {
 .footer ul li:hover span:nth-child(5) {
     transform: translate(40px, -40px);
     opacity: 1;
-}
+} */
 
-.footer ul li:hover span:nth-child(4) {
+/* .footer ul li:hover span:nth-child(4) {
     transform: translate(30px, -30px);
     opacity: 0.8;
 }
@@ -387,9 +387,9 @@ main {
 .footer ul li:hover span:nth-child(2) {
     transform: translate(10px, -10px);
     opacity: 0.4;
-}
+} */
 
-.footer ul li:hover span:nth-child(1) {
+/* .footer ul li:hover span:nth-child(1) {
     transform: translate(0px, 0px);
     opacity: 0.2;
 }
@@ -404,18 +404,18 @@ main {
 
 .footer ul li:nth-child(3):hover span {
     background: linear-gradient(125deg, #515bd4, #8134af, #dd2a7b, #f58529);
-}
+} */
 
-.footer ul li:nth-child(4):hover span {
+/* .footer ul li:nth-child(4):hover span {
     background: #4dc247;
 }
 
 .footer ul li:nth-child(5):hover span {
     background: #007bb5;
-}
+}  */
 
 /* Responsive Last Menú hamburguesa */
-@media (max-width: 952px) {
+/* @media (max-width: 952px) {
     .enlace {
         padding-left: 50px;
     }
@@ -423,104 +423,104 @@ main {
     .btn-neon {
 
         font-size: 16px;
-    }
+    } */
 
-    .btn-neon:hover {
+    /* .btn-neon:hover {
         background-color: transparent;
         box-shadow: none;
     }
 
-}
+} */
 
-@media (max-width:1400px) {
+/* @media (max-width:1400px) {
     .checkbtn {
         display: block;
-    }
+    } */
 
-    ul {
+    /* ul {
         display: flex;
         position: fixed;
         width: 100%;
         /* height: 100vh; */
         /* background: rgba(3, 124, 23, 0.809);  */
-        top: 80px;
+        /* top: 80px;
         left: -150%;
         text-align: center;
         transition: all .5s;
-    }
+    } */ 
 
-    nav ul li {
+    /* nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
 
-    }
+    } */
 
-    nav ul li a {
+    /* nav ul li a {
         font-size: 10px;
-    }
+    } */
 
-    li a:hover,
+    /* li a:hover,
     li a.active {
         background: none;
         color: orange;
 
-    }
+    } */
 
-    #check:checked~ul {
+    /* #check:checked~ul {
         left: 0;
     }
-}
+} */
 
-/* Estrategia Responsive: Mobile Last */
-@media (max-width:1400px) {
+/* Estrategia Responsive: Mobile Last --- Banner*/
+/* @media (max-width:1400px) { */
 
-    #imagen1 {
+    /* #imagen1 {
         height: 200px;
         width: 100vw;
         background-size: cover;
 
 
-    }
+    } */
 
-    #imagen2 {
+    /* #imagen2 {
 
         height: 200px;
         width: 100vw;
         background-size: cover;
 
-    }
+    } */
 
-    #imagen3 {
+    /* #imagen3 {
 
         height: 200px;
         width: 100vw;
 
     }
 
-}
+} */
 
 
 /* Estrategia Responsive: Mobile Last */
-@media (max-width:1150px) {
+/* @media (max-width:1150px) {
 
     /* Modifica estilos del boostrap cards */
-    .imagenes_cards img {
+    /* .imagenes_cards img {
         width: 550px;
         height: 350px;
-    }
+    } */ */
 
-    .card {
+    /* .card {
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     /* Estrategia Responsive: Mobile Last Page Inicio*/
-    .container {
+    /* .container {
         grid-template-columns: 150px;
         grid-template-rows: repeat(4, 150px);
         /* grid-auto-rows: 1fr; */
-        gap: 5px 5px;
+        /* gap: 5px 5px;
 
         grid-auto-flow: row;
         grid-template-areas:
@@ -530,13 +530,13 @@ main {
             "africa";
         justify-content: center;
 
-    }
+    }  */
 
     /* Estrategia Responsive: Mobile Last Page destino*/
-    .section_video_contenedor {
+    /* .section_video_contenedor {
 
         flex-direction: column;
 
     }
 
-}
+} */
