@@ -1,16 +1,19 @@
 // Page alojamientos - Carousel de imágenes 
-.boots-modif-ancho {
-    width: 50%;
-    margin: auto;
-    padding-bottom: 10px;
 
+.main {
+    h2 {
+        text-align: center;
+        
+    }
+
+    p {
+        text-align: center;
+        font-size: 25px;
+    }
+    .seccion1_div{
+        @extend .boots-modif-ancho;
+    }
 }
 
-.alojamientos__titulos {
-    text-align: center;
-}
 
-.alojamientos__titulos__p {
-    text-align: center;
-    font-size: 25px;
-}
+

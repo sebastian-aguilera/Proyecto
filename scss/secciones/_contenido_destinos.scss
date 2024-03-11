@@ -1,23 +1,19 @@
 //Page destinos - tamaño de video(iframe)
-.section_video_contenedor {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    justify-content: space-between;
-
-}
-
-.section_video_contenedor iframe {
-    width: 300px;
-    height: 400px;
-
+.main{
+    .section{
+        @extend .section_video_contenedor;
+        iframe {
+            width: 300px;
+            height: 400px;
+        
+        }
+    }
+    
 }
 
 //Estrategia Responsive: Mobile Last ---- Page destino
 @media (max-width:1150px){
 .section_video_contenedor {
-
     flex-direction: column;
-
 }
 }

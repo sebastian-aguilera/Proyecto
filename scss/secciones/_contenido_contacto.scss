@@ -1,7 +1,13 @@
-.contacto_estilo_parrafo {
-    text-align: center;
+.main{
+    .article{
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
+        .map_iframe {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
-.map_iframe {
-    display: flex;
-    justify-content: center;
-}
+
