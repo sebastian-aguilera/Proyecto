@@ -1,211 +1,119 @@
-.header {
-    background: #000000;
+header {
 
     nav {
-        @extend .nav;
 
-        label {
-            @extend .checkbtn;
-        }
+        background-image: linear-gradient(to right, #000000, #000000);
 
-        #check {
-            display: none;
-        }
 
-        .enlace a {
-            position: absolute;
-            padding: 0 5px;
-        }
-
-        .logo a img {
-            width: 300px;
-        }
-
-        ul {
-            float: right;
-
-            // Le dá un zoom al logo 
-            .imagen-logo:hover {
-                cursor: pointer;
-                transition: 2s;
-            }
-
-            li {
-                display: inline-block;
-                line-height: 200px;
-                margin: 0 30px;
-
-                a {
-                    font-size: 20px;
-                    padding: 3px 10px;
-                    border-radius: 10px;
-
-                    //Botones neon
-                    .btn-neon {
-                        position: relative;
-                        padding: 15px 30px;
-                        color: rgb(225, 255, 0);
-                        font-size: 25px;
-                        text-decoration: none;
-                        transition: 2s;
+        div {
+            ul {
+                li {
+                    .nav-link {
+                        color: $naranja !important;
+                        font-size: 20px;
                     }
 
-                    .btn-neon:hover {
-                        background-color: $naranja;
-                        box-shadow: 0 0 10px $naranja, 0 0 200px $naranja, 0 0 80px $naranja;
-                    }
 
                 }
 
-
+                .nav-link:hover {
+                    color: yellow !important;
+                }
             }
 
-        }
 
-    }
-
-    // Banner
-    #slider {
-        width: 100%;
-        overflow: hidden;
-    
-        #contenedor {
-            display: grid;
-            grid-template-columns: 100% 100% 100%;
-            width: 100%;
-            animation-name: mover;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            flex-wrap: nowrap;
-    
         }
     }
-    
-    #imagen1 {
-        background-image: url('../resources/definbanner.jpg');
-        width: 100%;
-        height: 440px;
-        background-size: cover;
-    
-    }
-    
-    #imagen2 {
-        background-image: url('../resources/banner2.jpg');
-        width: 100%;
-        height: 440px;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        justify-content: center;
-    
-    }
-    
-    #imagen3 {
-        background-image: url('../resources/banner3.jpg');
-        width: 100%;
-        height: 440px;
-        background-size: cover;
-        position: relative;
-        background-position: center center;
-    
-    
-    }
-    @keyframes mover {
-
-        25% {
-            margin-left: 0%;
-        }
-    
-        28% {
-            transition-delay: 5s;
-            margin-left: -100%;
-        }
-    
-        54% {
-            transition-delay: 5s;
-            margin-left: -100%;
-        }
-    
-        58% {
-            transition-delay: 5s;
-            margin-left: -200%;
-        }
-    
-        95% {
-            transition-delay: 5s;
-            margin-left: -200%;
-        }
-    
-        100% {
-            transition-delay: 5s;
-            margin-left: 0%;
-        }
-    
-    }
-    
 
 }
 
-// Responsive Last Menú hamburguesa 
-@media (max-width: 952px) {
-    .enlace {
-        padding-left: 50px;
-    }
 
-    .btn-neon {
 
-        font-size: 16px;
-    } 
+// Banner
+#slider {
+    width: 100%;
+    overflow: hidden;
 
-     .btn-neon:hover {
-        background-color: transparent;
-        box-shadow: none;
-    }
-
-} 
-
- @media (max-width:1400px) {
-    .checkbtn {
-        display: block;
-    } 
-
-     ul {
-        display: flex;
-        position: fixed;
+    #contenedor {
+        display: grid;
+        grid-template-columns: 100% 100% 100%;
         width: 100%;
-        //height: 100vh; 
-        //background: rgba(3, 124, 23, 0.809);  
-         top: 80px;
-        left: -150%;
-        text-align: center;
-        transition: all .5s;
-    } 
+        animation-name: mover;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        flex-wrap: nowrap;
 
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-
-    } 
-
-     nav ul li a {
-        font-size: 10px;
-    } 
-
-     li a:hover,
-    li a.active {
-        background: none;
-        color: orange;
-
-    } 
-
-     #check:checked~ul {
-        left: 0;
     }
-} 
+}
+
+#imagen1 {
+    background-image: url('../resources/definbanner.jpg');
+    width: 100%;
+    height: 440px;
+    background-size: cover;
+
+}
+
+#imagen2 {
+    background-image: url('../resources/banner2.jpg');
+    width: 100%;
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+#imagen3 {
+    background-image: url('../resources/banner3.jpg');
+    width: 100%;
+    height: 440px;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+
+
+}
+
+@keyframes mover {
+
+    25% {
+        margin-left: 0%;
+    }
+
+    28% {
+        transition-delay: 5s;
+        margin-left: -100%;
+    }
+
+    54% {
+        transition-delay: 5s;
+        margin-left: -100%;
+    }
+
+    58% {
+        transition-delay: 5s;
+        margin-left: -200%;
+    }
+
+    95% {
+        transition-delay: 5s;
+        margin-left: -200%;
+    }
+
+    100% {
+        transition-delay: 5s;
+        margin-left: 0%;
+    }
+
+}
+
+
+
 
 /* Estrategia Responsive: Mobile Last --- Banner*/
- @media (max-width:1400px) { 
+@media (max-width:1400px) {
 
     #imagen1 {
         height: 200px;
@@ -213,7 +121,7 @@
         background-size: cover;
 
 
-    } 
+    }
 
     #imagen2 {
 
@@ -221,16 +129,18 @@
         width: 100vw;
         background-size: cover;
 
-    } 
+    }
 
     #imagen3 {
 
         height: 200px;
         width: 100vw;
+        background-size: cover;
+        background-size: contain;
+        background-position: center;
+       
+
+
 
     }
-
-} 
-
-
-
+}

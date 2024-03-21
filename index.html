@@ -4,112 +4,110 @@
 <head class="header">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tu próximo destino está en tu agencia de viajes Paradise-Tour. Encontrá, destinos soñados, paquetes y alojamientos en oferta. ¡Tu viaje barato está acá!">
+    <meta name="description"
+        content="Tu próximo destino está en tu agencia de viajes Paradise-Tour. Encontrá, destinos soñados, paquetes y alojamientos en oferta. ¡Tu viaje barato está acá!">
     <meta name="keywords" content="tour, turismo, paquetes de viajes, agencia de viaje, viajes">
     <link rel="shortcut icon" href="./resources/icono_inicio.png" type="image/x-icon">
     <title>Paradise-Tour y Viajes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/639469dccd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
+
 <body>
    <!-- Encabezado -->
     <header class="header">
-        <nav class="nav">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <!-- Logo -->
-            <a href="./index.html" class="enlace">
-                <img src="./resources/logo_transp2.jpg" class="logo">
-            </a>
-            <!-- Menú con Links -->
+        <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                  <img src="./resources/logo_transp2.jpg" alt="Logo" width="250px">
+                </a>
 
-            <ul class="imagen-logo menu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <strong><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Inicio</a></strong>
+                        </li>
+                        <li class="nav-item btn-neon">
+                            <strong><a class="nav-link" href="#"><i class="fa-solid fa-plane"></i>Destinos</a></strong>
+                        </li>
+                        <li class="nav-item">
+                          <strong><a class="nav-link" href="#"><i class="fa-solid fa-suitcase"></i>Paquetes</a></strong>
+                      </li>
+                      <li class="nav-item">
+                      <strong><a class="nav-link" href="#"><i class="fa-solid fa-hotel"></i>Alojamientos</a></strong>
+                    </li>
+                    <li class="nav-item">
+                      <strong><a class="nav-link" href="#"><i class="fa-solid fa-address-book"></i>Contacto</a></strong>
+                  </li>
 
-                <li>
-                    <a href="./index.html" class="btn-neon active">
+                        
+                    </ul>
+                    
+                </div>
+            </div>
 
-                        <strong><i class="fa-solid fa-house"></i>Inicio</strong>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./pages/destinos.html" class="btn-neon">
-
-                        <strong><i class="fa-solid fa-plane"></i>Destinos</strong>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./pages/paquetes.html" class="btn-neon">
-
-                        <strong><i class="fa-solid fa-suitcase"></i>Paquetes</strong>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./pages/alojamientos.html" class="btn-neon">
-
-                        <strong><i class="fa-solid fa-hotel"></i>Alojamientos</strong>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./pages/contacto.html" class="btn-neon">
-
-                        <strong><i class="fa-solid fa-address-book"></i>Contacto</strong>
-                    </a>
-                </li>
-            </ul>
         </nav>
+
         <!-- Banner -->
-        <div id="slider">
-            <div id="contenedor">
-                <div id="imagen1">
+        <nav>
 
-                </div>
+            <div id="slider">
+                <div id="contenedor">
+                    <div id="imagen1">
 
-                <div id="imagen2">
+                    </div>
 
-                </div>
+                    <div id="imagen2">
 
-                <div id="imagen3">
+                    </div>
+
+                    <div id="imagen3">
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
-
+        </nav>
     </header>
-    <!-- Contenido Principal -->
-    <main class="main__inicio">
-        <!-- Grilla de Viajes -->
-        <h1 class="main_titulogrilla animate__animated animate__shakeY"><strong>Recorremos el mundo</strong></h1>
-        <br>
-        <div class="container">
-            <div class="cancun">
-                <h2 class="animate__animated animate__flash">Cancún</h2>
-            </div>
-            <div class="disney">
 
-                <h2 class="animate__animated animate__flash">Disney</h2>
-            </div>
-            <div class="roma">
+     <!-- Contenido Principal -->
+  <main class="main__inicio">
+    <!-- Grilla de Viajes -->
+    <h1 class="main_titulogrilla animate__animated animate__shakeY"><strong>Recorremos el mundo</strong></h1>
+    <br>
+    <div class="container">
+      <div class="cancun">
+        <h2 class="animate__animated animate__flash">Cancún</h2>
+      </div>
+      <div class="disney">
 
-                <h2 class="animate__animated animate__flash">Roma</h2>
-            </div>
+        <h2 class="animate__animated animate__flash">Disney</h2>
+      </div>
+      <div class="roma">
 
-            <div class="africa">
+        <h2 class="animate__animated animate__flash">Roma</h2>
+      </div>
 
-                <h2 class="animate__animated animate__flash">África</h2>
-            </div>
-        </div>
-    </main>
-     <!-- Pie de Página -->
+      <div class="africa">
+
+        <h2 class="animate__animated animate__flash">África</h2>
+      </div>
+    </div>
+  </main>
+  <!-- Pie de Página -->
   <footer class="footer">
     <div>
       <ul>
@@ -165,8 +163,6 @@
 
       </ul>
 
-    </div>
-
     <!-- Información de Copy -->
     <p>
       <strong>&copy Paradise Comp@ny</strong>
@@ -174,9 +170,11 @@
 
   </footer>
 
-    
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
-
-

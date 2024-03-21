@@ -22,12 +22,12 @@
   padding-top: 1px;
   text-align: center; }
 
-.nav, .header nav {
+.nav {
   background: #000000;
   height: 200px;
   width: 100%; }
 
-.checkbtn, .header nav label {
+.checkbtn {
   font-size: 70px;
   color: orange;
   float: right;
@@ -36,69 +36,48 @@
   cursor: pointer;
   display: none; }
 
-.header {
-  background: #000000; }
-  .header nav #check {
-    display: none; }
-  .header nav .enlace a {
-    position: absolute;
-    padding: 0 5px; }
-  .header nav .logo a img {
-    width: 300px; }
-  .header nav ul {
-    float: right; }
-    .header nav ul .imagen-logo:hover {
-      cursor: pointer;
-      transition: 2s; }
-    .header nav ul li {
-      display: inline-block;
-      line-height: 200px;
-      margin: 0 30px; }
-      .header nav ul li a {
-        font-size: 20px;
-        padding: 3px 10px;
-        border-radius: 10px; }
-        .header nav ul li a .btn-neon {
-          position: relative;
-          padding: 15px 30px;
-          color: #e1ff00;
-          font-size: 25px;
-          text-decoration: none;
-          transition: 2s; }
-        .header nav ul li a .btn-neon:hover {
-          background-color: #ffa500;
-          box-shadow: 0 0 10px #ffa500, 0 0 200px #ffa500, 0 0 80px #ffa500; }
-  .header #slider {
+header nav {
+  background-image: linear-gradient(to right, #000000, #000000); }
+  header nav div ul li .nav-link {
+    color: #ffa500 !important;
+    font-size: 20px; }
+  header nav div ul .nav-link:hover {
+    color: yellow !important; }
+
+#slider {
+  width: 100%;
+  overflow: hidden; }
+  #slider #contenedor {
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
     width: 100%;
-    overflow: hidden; }
-    .header #slider #contenedor {
-      display: grid;
-      grid-template-columns: 100% 100% 100%;
-      width: 100%;
-      animation-name: mover;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      flex-wrap: nowrap; }
-  .header #imagen1 {
-    background-image: url("../resources/definbanner.jpg");
-    width: 100%;
-    height: 440px;
-    background-size: cover; }
-  .header #imagen2 {
-    background-image: url("../resources/banner2.jpg");
-    width: 100%;
-    height: 440px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    justify-content: center; }
-  .header #imagen3 {
-    background-image: url("../resources/banner3.jpg");
-    width: 100%;
-    height: 440px;
-    background-size: cover;
-    position: relative;
-    background-position: center center; }
+    animation-name: mover;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    flex-wrap: nowrap; }
+
+#imagen1 {
+  background-image: url("../resources/definbanner.jpg");
+  width: 100%;
+  height: 440px;
+  background-size: cover; }
+
+#imagen2 {
+  background-image: url("../resources/banner2.jpg");
+  width: 100%;
+  height: 440px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center; }
+
+#imagen3 {
+  background-image: url("../resources/banner3.jpg");
+  width: 100%;
+  height: 440px;
+  background-size: cover;
+  position: relative;
+  background-position: center center; }
 
 @keyframes mover {
   25% {
@@ -119,39 +98,6 @@
     transition-delay: 5s;
     margin-left: 0%; } }
 
-@media (max-width: 952px) {
-  .enlace {
-    padding-left: 50px; }
-  .btn-neon {
-    font-size: 16px; }
-  .btn-neon:hover {
-    background-color: transparent;
-    box-shadow: none; } }
-
-@media (max-width: 1400px) {
-  .checkbtn, .header nav label {
-    display: block; }
-  ul {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    top: 80px;
-    left: -150%;
-    text-align: center;
-    transition: all .5s; }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px; }
-  nav ul li a {
-    font-size: 10px; }
-  li a:hover,
-  li a.active {
-    background: none;
-    color: orange; }
-  #check:checked ~ ul {
-    left: 0; } }
-
 /* Estrategia Responsive: Mobile Last --- Banner*/
 @media (max-width: 1400px) {
   #imagen1 {
@@ -164,7 +110,10 @@
     background-size: cover; }
   #imagen3 {
     height: 200px;
-    width: 100vw; } }
+    width: 100vw;
+    background-size: cover;
+    background-size: contain;
+    background-position: center; } }
 
 .main h2 {
   text-align: center; }
