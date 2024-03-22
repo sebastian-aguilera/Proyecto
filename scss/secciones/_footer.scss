@@ -2,6 +2,7 @@
 //Iconos del footer 
 .footer {
     @extend .footer;
+    height: 300px;
 
     ul {
         position: relative;
@@ -104,9 +105,21 @@
             background: #4dc247;
         }
 
-       li:nth-child(5):hover span {
+        li:nth-child(5):hover span {
             background: #007bb5;
         }
+    }
+
+}
+
+@media (max-width:1150px) {
+
+    // Modifica estilos del boostrap cards 
+    .footer_imagen img {
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+
     }
 
 }
